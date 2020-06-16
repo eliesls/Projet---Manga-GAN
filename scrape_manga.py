@@ -1,4 +1,3 @@
-#Les données sont sur le site https://myanimelist.net/character.php
 import requests
 
 count = 0
@@ -9,6 +8,7 @@ for i in range(1,14000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content)
+        print(count)
     except:
         print("error")
 
@@ -18,6 +18,7 @@ for i in range(1,15000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content)
+        print(count)
     except:
         print("error")
 
@@ -36,6 +37,7 @@ for i in range(1,11000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content) 
+        print(count)
     except:
         print("error")
     
@@ -45,6 +47,7 @@ for i in range(1,10000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content)
+        print(count)
     except:
         print("error")
     
@@ -54,6 +57,7 @@ for i in range(1,13000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content)
+        print(count)
     except:
         print("error")
 
@@ -63,6 +67,7 @@ for i in range(1,13000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content)
+        print(count)
     except:
         print("error")
     
@@ -72,6 +77,7 @@ for i in range(1,11000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content)
+        print(count)
     except:
         print("error")
 
@@ -81,5 +87,6 @@ for i in range(1,12000,10):
         r = requests.get(url, allow_redirects=True)
         count+=1
         open(f"image{count}.jpg", 'wb').write(r.content)
+        print(count)
     except:
         print("error")
